@@ -1,0 +1,30 @@
+  <div class="row col col-md-12">
+    <div class="col col-md-12 form-group">
+      <label class="font-weight-bold" for="supplier_name">Supplier Name :</label>
+      <input type="text" class="form-control" placeholder="Name" id="supplier_name" onkeyup="validateName(this.value, 'name_error');">
+      <code class="text-danger small font-weight-bold float-right" id="name_error" style="display: none;"></code>
+    </div>
+  </div>
+ 
+ <div class="row col col-md-12">
+    <div class="col col-md-12 form-group">
+      <label class="font-weight-bold" for="password">Password :</label>
+      <input id="password" type="text" class="form-control" placeholder="password" style="max-height: 100px;">
+      <code class="text-danger small font-weight-bold float-right mb-2" id="password_error" style="display: none;"></code>
+    </div>
+  </div>
+
+  <div class="row col col-md-12">
+    <div class="col col-md-12 form-group">
+      <label class="font-weight-bold" for="confirm_password">Confirm Password :</label>
+      <input id="confirm_password" type="password" class="form-control" placeholder="confirm password">
+      <code class="text-danger small font-weight-bold float-right mb-2" id="confirm_password_error" style="display: none;"></code>
+    </div>
+  </div>
+
+  <div class="row col col-md-12">
+    &emsp;
+    <div class="form-group m-auto">
+      <button class="btn btn-primary form-control" onclick="addAdmin();">ADD</button>
+    </div>
+  </div>

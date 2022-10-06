@@ -1,0 +1,32 @@
+<!-- Category details content -->
+<!-- Category name control -->
+<div class="row col col-md-12">
+    <div class="col col-md-12 form-group">
+      <label class="font-weight-bold" for="category_name">Category Type:</label>
+      <input type="text" class="form-control" placeholder="Category Name" id="category_name" onkeyup="validateName(this.value, 'categ_name_error');">
+      <code class="text-danger small font-weight-bold float-right" id="categ_name_error" style="display: none;"></code>
+    </div>
+  </div>
+  
+  <!-- Category Description control -->
+  <div class="row col col-md-12">
+    <div class="col col-md-12 form-group">
+      <label class="font-weight-bold" for="categ_description">Category Description :</label>
+      <input type="text" class="form-control" placeholder="Description" id="categ_description" onblur="validateName(this.value, 'descr_error');">
+      <code class="text-danger small font-weight-bold float-right" id="descr_error" style="display: none;"></code>
+    </div>
+  </div>
+  
+  <div class="col col-md-12">
+    <hr class="col-md-12 float-left" style="padding: 0px; width: 95%; border-top: 2px solid  #02b6ff;">
+  </div>
+  
+  <!-- new user button -->
+  <div class="row col col-md-12">
+    &emsp;
+    <div class="form-group m-auto">
+      <button class="btn btn-primary form-control" onclick="addCategory();">ADD</button>
+    </div>
+  </div>
+  <!-- result message -->
+  <div id="category_acknowledgement" class="col-md-12 h5 text-success font-weight-bold text-center" style="font-family: sans-serif;"></div>
